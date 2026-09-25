@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: portafolio-web
+    env: static
+    buildCommand: "echo 'No build required'"
+    staticPublishPath: "."
