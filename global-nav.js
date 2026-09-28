@@ -99,9 +99,6 @@
     const nav = document.createElement('nav');
     nav.id = 'portfolio-global-nav';
     
-    // Determine active path
-    const currentPath = window.location.pathname;
-    
     const links = [
         { path: '/', icon: '🏠', text: 'Inicio', class: 'nav-home-btn' },
         { path: '/Landing%20page%20empresarial/FHP/index.html', icon: '🏢', text: 'FHP' },
