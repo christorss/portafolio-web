@@ -26,7 +26,7 @@
         }
         #portfolio-global-nav {
             position: fixed;
-            top: 20px;
+            bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
             background: var(--nav-bg);
@@ -42,6 +42,12 @@
             white-space: nowrap;
             gap: 24px;
             transition: all 0.3s ease;
+            opacity: 0.65;
+        }
+        #portfolio-global-nav:hover {
+            opacity: 1;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 0 1px var(--nav-border);
+            transform: translateX(-50%) translateY(-5px);
         }
         #portfolio-global-nav a {
             color: #cbd5e1;
