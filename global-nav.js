@@ -1,4 +1,12 @@
 (function() {
+    // Determine active path
+    const currentPath = window.location.pathname;
+    
+    // Do not show the nav on the root portfolio page
+    if (currentPath === '/' || currentPath === '/index.html') {
+        return;
+    }
+
     // Only run once
     if (document.getElementById('portfolio-global-nav')) return;
 
