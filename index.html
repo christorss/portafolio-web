@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Web</title>
+    <title>Christopher - Portafolio Web</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Portafolio Web</h1>
-        <p>Una colección de mis proyectos recientes</p>
+    <div class="bg-pattern"></div>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="profile-avatar">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <h1>Christopher's Portfolio</h1>
+            <p>Desarrollador | Creando experiencias digitales modernas y atractivas</p>
+            <div class="social-links">
+                <a href="https://github.com/christorss" target="_blank"><i class="fa-brands fa-github"></i> github.com/christorss</a>
+            </div>
+        </div>
     </header>
 
-    <main class="portfolio-grid">
-        <!-- Proyecto 1 -->
-        <a href="Landing page empresarial/FHP/index.html" class="portfolio-card">
-            <div class="card-content">
-                <h2>Landing Page Empresarial</h2>
-                <p>Una página de aterrizaje moderna y profesional para FHP CORP.</p>
-                <span class="btn">Ver Proyecto</span>
-            </div>
-        </a>
+    <main class="portfolio-container">
+        <div class="section-title">
+            <h2>Proyectos Destacados</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="portfolio-grid">
+            <!-- Proyecto 1 -->
+            <a href="Landing page empresarial/FHP/index.html" class="portfolio-card fade-in">
+                <div class="card-image" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <div class="card-content">
+                    <div class="tags"><span class="tag">Next.js</span> <span class="tag">Empresarial</span></div>
+                    <h2>FHP Corporativo</h2>
+                    <p>Aplicación de aterrizaje moderna y profesional, optimizada para rendimiento y SEO.</p>
+                    <span class="btn">Explorar Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
 
-        <!-- Proyecto 2 -->
-        <a href="constructora_3d/index.html" class="portfolio-card">
-            <div class="card-content">
-                <h2>Constructora 3D</h2>
-                <p>Sitio web para una empresa de construcción y modelado 3D.</p>
-                <span class="btn">Ver Proyecto</span>
-            </div>
-        </a>
+            <!-- Proyecto 2 -->
+            <a href="constructora_3d/index.html" class="portfolio-card fade-in" style="animation-delay: 0.1s;">
+                <div class="card-image" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+                <div class="card-content">
+                    <div class="tags"><span class="tag">Vite</span> <span class="tag">Arquitectura</span></div>
+                    <h2>Constructora 3D</h2>
+                    <p>Sitio web inmersivo para una empresa de construcción y modelado arquitectónico en 3D.</p>
+                    <span class="btn">Explorar Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
 
-        <!-- Proyecto 3 -->
-        <a href="landing-smartwatch/index.html" class="portfolio-card">
-            <div class="card-content">
-                <h2>Landing Smartwatch</h2>
-                <p>Página promocional para un reloj inteligente con diseño atractivo.</p>
-                <span class="btn">Ver Proyecto</span>
-            </div>
-        </a>
+            <!-- Proyecto 3 -->
+            <a href="landing-smartwatch/index.html" class="portfolio-card fade-in" style="animation-delay: 0.2s;">
+                <div class="card-image" style="background: linear-gradient(135deg, #ff416c, #ff4b2b);">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="card-content">
+                    <div class="tags"><span class="tag">E-commerce</span> <span class="tag">Landing</span></div>
+                    <h2>Smartwatch Promo</h2>
+                    <p>Página promocional dinámica y atractiva para el lanzamiento de un reloj inteligente.</p>
+                    <span class="btn">Explorar Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
 
-        <!-- Proyecto 4 -->
-        <a href="steak-house/index.html" class="portfolio-card">
-            <div class="card-content">
-                <h2>Steak House</h2>
-                <p>Sitio web para un restaurante tipo Steak House, con menú y sistema QR.</p>
-                <span class="btn">Ver Proyecto</span>
-            </div>
-        </a>
+            <!-- Proyecto 4 -->
+            <a href="steak-house/index.html" class="portfolio-card fade-in" style="animation-delay: 0.3s;">
+                <div class="card-image" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="card-content">
+                    <div class="tags"><span class="tag">Restaurante</span> <span class="tag">UI/UX</span></div>
+                    <h2>Steak House Menú</h2>
+                    <p>Sitio web para un restaurante tipo Steak House, integrando un menú digital y sistema QR.</p>
+                    <span class="btn">Explorar Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Mi Portafolio</p>
+        <div class="footer-content">
+            <p>&copy; 2026 Christopher. Hecho con dedicación.</p>
+        </div>
     </footer>
 </body>
 </html>
