@@ -165,7 +165,7 @@ body {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('constructora_3d/media/casa-bruma.jpg') center/cover no-repeat; 
 }
 .bg-extreme { 
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('juegos-extremos/images/img0.jpg') center/cover no-repeat; 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('juegos-extremos/images/hero.jpg') center/cover no-repeat; 
 }
 .bg-tech { 
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('landing-smartwatch/smartwatch-hero.png') center/cover no-repeat; 
