@@ -167,6 +167,37 @@ body {
     line-height: 1.5;
 }
 
+.gallery-section {
+    padding: 2rem 5% 8rem;
+}
+
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 10px;
+    grid-gap: 1.5rem;
+    align-items: start;
+}
+
+.masonry img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.masonry img:hover {
+    transform: scale(1.03);
+}
+
+.masonry img:nth-child(even) {
+    grid-row-end: span 25;
+}
+
+.masonry img:nth-child(odd) {
+    grid-row-end: span 35;
+}
+
 .cta-section {
     padding: 5rem 5%;
     display: flex;

@@ -29,41 +29,40 @@
         /* Floating Toggle Button */
         #gn-toggle {
             position: fixed;
-            top: 25px;
-            right: 25px;
-            width: 55px;
-            height: 55px;
-            background: var(--gn-dark);
-            border-radius: 50%;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gn-accent);
+            color: white;
+            border-radius: 50px;
             cursor: pointer;
             z-index: 2147483647;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            gap: 6px;
-            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.3s;
+            gap: 10px;
+            padding: 12px 24px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border: none;
+            letter-spacing: 0.5px;
         }
 
         #gn-toggle:hover {
-            transform: scale(1.08);
-            background: #1e293b;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.5);
+            background: #2563eb;
         }
 
-        #gn-toggle span {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background: var(--gn-light);
-            transition: all 0.3s ease;
-            transform-origin: center;
+        #gn-toggle .toggle-icon {
+            font-size: 18px;
+            transition: transform 0.3s;
         }
 
-        #gn-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-        #gn-toggle.active span:nth-child(2) { opacity: 0; }
-        #gn-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        #gn-toggle.active .toggle-icon {
+            transform: rotate(45deg);
+        }
 
         /* Fullscreen Overlay Menu */
         #gn-overlay {
@@ -180,11 +179,6 @@
         }
 
         @media (max-width: 768px) {
-            #gn-toggle {
-                top: auto;
-                bottom: 25px;
-                right: 25px;
-            }
             .gn-header {
                 top: 25px;
                 left: 25px;
@@ -203,7 +197,7 @@
     const btn = document.createElement('button');
     btn.id = 'gn-toggle';
     btn.setAttribute('aria-label', 'Toggle Navigation');
-    btn.innerHTML = '<span></span><span></span><span></span>';
+    btn.innerHTML = '<span class="toggle-icon">✚</span> Explorar Proyectos';
 
     // Overlay
     const overlay = document.createElement('div');
