@@ -3,94 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher - Portafolio Web</title>
+    <title>Portafolio Web</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="bg-pattern"></div>
-    <header class="hero">
-        <div class="hero-content">
-            <div class="profile-avatar">
-                <i class="fa-solid fa-code"></i>
+    
+    <!-- Minimalist Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="brand">
+                <div class="brand-dot"></div>
+                Portafolio <b>Web</b>
             </div>
-            <h1>Christopher's Portfolio</h1>
-            <p>Desarrollador | Creando experiencias digitales modernas y atractivas</p>
-            <div class="social-links">
-                <a href="https://github.com/christorss" target="_blank"><i class="fa-brands fa-github"></i> github.com/christorss</a>
+            <div class="header-links">
+                <a href="https://github.com/christorss" target="_blank" class="github-link">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
             </div>
         </div>
     </header>
 
     <main class="portfolio-container">
-        <div class="section-title">
-            <h2>Proyectos Destacados</h2>
-            <div class="title-underline"></div>
+        <div class="hero-intro">
+            <h1>Colección de Experiencias<br><span class="text-gradient">Digitales</span></h1>
+            <p>Explora un ecosistema de páginas web diseñadas para captar la atención, convertir visitas en clientes y ofrecer una experiencia visual impecable.</p>
         </div>
         
         <div class="portfolio-grid">
-            <!-- Proyecto 1 -->
+
+            <!-- FHP Corporativo -->
             <a href="Landing page empresarial/FHP/index.html" class="portfolio-card fade-in">
-                <div class="card-image" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
-                    <i class="fa-solid fa-building"></i>
+                <div class="card-image bg-corporate">
+                    <i class="fa-solid fa-city"></i>
+                    <div class="image-overlay">
+                        <span>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
                 </div>
                 <div class="card-content">
-                    <div class="tags"><span class="tag">Next.js</span> <span class="tag">Empresarial</span></div>
+                    <div class="tags"><span class="tag">Empresarial</span> <span class="tag">React/Next.js</span></div>
                     <h2>FHP Corporativo</h2>
-                    <p>Aplicación de aterrizaje moderna y profesional, optimizada para rendimiento y SEO.</p>
-                    <span class="btn">Explorar Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    <p>Landing page corporativa robusta, optimizada para rendimiento y SEO.</p>
                 </div>
             </a>
 
-            <!-- Proyecto 2 -->
+            <!-- Constructora 3D -->
             <a href="constructora_3d/index.html" class="portfolio-card fade-in" style="animation-delay: 0.1s;">
-                <div class="card-image" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
-                    <i class="fa-solid fa-cube"></i>
+                <div class="card-image bg-architecture">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <div class="image-overlay">
+                        <span>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
                 </div>
                 <div class="card-content">
-                    <div class="tags"><span class="tag">Vite</span> <span class="tag">Arquitectura</span></div>
+                    <div class="tags"><span class="tag">Arquitectura</span> <span class="tag">Animaciones</span></div>
                     <h2>Constructora 3D</h2>
-                    <p>Sitio web inmersivo para una empresa de construcción y modelado arquitectónico en 3D.</p>
-                    <span class="btn">Explorar Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    <p>Sitio web inmersivo para un estudio de arquitectura y modelado 3D.</p>
                 </div>
             </a>
 
-            <!-- Proyecto 3 -->
-            <a href="landing-smartwatch/index.html" class="portfolio-card fade-in" style="animation-delay: 0.2s;">
-                <div class="card-image" style="background: linear-gradient(135deg, #ff416c, #ff4b2b);">
-                    <i class="fa-solid fa-clock"></i>
+            <!-- Juegos Extremos -->
+            <a href="juegos-extremos/index.html" class="portfolio-card fade-in featured-card" style="animation-delay: 0.2s;">
+                <div class="card-image bg-extreme">
+                    <i class="fa-solid fa-person-snowboarding"></i>
+                    <div class="image-overlay">
+                        <span>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <div class="badge">NUEVO</div>
                 </div>
                 <div class="card-content">
-                    <div class="tags"><span class="tag">E-commerce</span> <span class="tag">Landing</span></div>
+                    <div class="tags"><span class="tag">Aventura</span> <span class="tag">UI Dark Mode</span></div>
+                    <h2>Xtreme Sports</h2>
+                    <p>Página de aterrizaje vibrante y oscura diseñada para vender experiencias de adrenalina pura.</p>
+                </div>
+            </a>
+
+            <!-- Smartwatch Promo -->
+            <a href="landing-smartwatch/index.html" class="portfolio-card fade-in" style="animation-delay: 0.3s;">
+                <div class="card-image bg-tech">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <div class="image-overlay">
+                        <span>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="tags"><span class="tag">E-commerce</span> <span class="tag">Producto</span></div>
                     <h2>Smartwatch Promo</h2>
-                    <p>Página promocional dinámica y atractiva para el lanzamiento de un reloj inteligente.</p>
-                    <span class="btn">Explorar Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    <p>Página dinámica y colorida para promocionar el lanzamiento de un reloj inteligente.</p>
                 </div>
             </a>
 
-            <!-- Proyecto 4 -->
-            <a href="steak-house/index.html" class="portfolio-card fade-in" style="animation-delay: 0.3s;">
-                <div class="card-image" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
-                    <i class="fa-solid fa-utensils"></i>
+            <!-- Steak House -->
+            <a href="steak-house/index.html" class="portfolio-card fade-in" style="animation-delay: 0.4s;">
+                <div class="card-image bg-food">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    <div class="image-overlay">
+                        <span>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
                 </div>
                 <div class="card-content">
-                    <div class="tags"><span class="tag">Restaurante</span> <span class="tag">UI/UX</span></div>
+                    <div class="tags"><span class="tag">Gastronomía</span> <span class="tag">Menú QR</span></div>
                     <h2>Steak House Menú</h2>
-                    <p>Sitio web para un restaurante tipo Steak House, integrando un menú digital y sistema QR.</p>
-                    <span class="btn">Explorar Proyecto <i class="fa-solid fa-arrow-right"></i></span>
+                    <p>Aplicación web para un restaurante de carnes, integrando el menú digital para clientes.</p>
                 </div>
             </a>
+            
         </div>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 Christopher. Hecho con dedicación.</p>
+            <p>&copy; 2026 Portafolio Web. Diseño minimalista y funcional.</p>
         </div>
     </footer>
-<script src="/global-nav.js"></script>
+
+    <!-- Global Nav Script Injection -->
+    <script src="/global-nav.js"></script>
 </body>
 </html>
-
