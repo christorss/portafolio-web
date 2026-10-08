@@ -157,12 +157,22 @@ body {
     overflow: hidden;
 }
 
-/* Gradients for different projects */
-.bg-corporate { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
-.bg-architecture { background: linear-gradient(135deg, #1e3c72, #2a5298); }
-.bg-extreme { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
-.bg-tech { background: linear-gradient(135deg, #4776E6, #8E54E9); }
-.bg-food { background: linear-gradient(135deg, #f7971e, #ffd200); }
+/* Images for different projects */
+.bg-corporate { 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Landing page empresarial/FHP/images/hero.jpg') center/cover no-repeat; 
+}
+.bg-architecture { 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('constructora_3d/media/casa-bruma.jpg') center/cover no-repeat; 
+}
+.bg-extreme { 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('juegos-extremos/images/img0.jpg') center/cover no-repeat; 
+}
+.bg-tech { 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('landing-smartwatch/smartwatch-hero.png') center/cover no-repeat; 
+}
+.bg-food { 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('steak-house/steak-thumbnail.jpg') center/cover no-repeat; 
+}
 
 .badge {
     position: absolute;
